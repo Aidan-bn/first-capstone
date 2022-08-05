@@ -22,22 +22,24 @@
                 <li class="social-li">Logout</li>
             </ul>
         </div>
+        <div class="hamburger container">
+            <span class="material-symbols-outlined hamburger-menu">menu</span>
+        </div>
         <nav>
-            <div class="logo hide">
-                <a href="./pages/about.html">Welcome</a>
+            <div class="">
+                Welcome
             </div>
-            <ul class="menu-ul color-o hide">
-                <li class="menu-li"><a href="/index.html">About</a></li>
-                <li class="menu-li">Program</li>
+            <ul class="menu-ul">
+                <li class="menu-li active"><a href="./pages/about.html">About</a></li>
+                <li class="menu-li"><a href="index.html">Program</a></li>
                 <li class="menu-li">Join</li>
                 <li class="menu-li">Sponsor</li>
                 <li class="menu-li">News</li>
-                <li class="menu-li">CC Compaign</li>
-            </ul>
-            <div class="hamburger container">
-                <span class="material-symbols-outlined">menu</span>
-            </div>
+                <li class="menu-li last-child">CC Compaign</li>
+                <li class="close">&times;</li>
+            </ul> 
         </nav>
+        
         <div class="greeting container about-center">
             <h3 class="color-o">"Hello Customers"</h3>
         </div>
@@ -93,35 +95,46 @@
                 <h2>2011</h2>
                 <p>Activity of the year</p>
             </div>
+            <div class="more">
+                <button class="btn-more" id="btn-more">
+                    More <img src="../images/more.svg" alt="down arrow" class="color-o" width="30 px">
+                </button>
+            </div>
         </div>
         
     </section>
     <!--end feature section-->
     <!--start partner section-->
-    <section class="partiners">
-        <div class="partner-list">
-            <h3>Partner</h3>
-            <ul class="ul-partners">
-                <li class="li-partiners">Mozilla</li>
-                <li class="li-partiners">Google</li>
-                <li class="li-partiners">NAVER</li>
-                <li class="li-partiners">daumkakao</li>
-                <li class="li-partiners">airbnb</li>
-            </ul-partners>
-        </div>
-    </section>
-    <!--end partner section-->
-        <footer>
-            <div class="footer-logo">
-                <img src="../images/logo-hall.webp" alt="hall logo">
-            </div>
-            <div class="footer-info">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, aspernatur.
-            </div>
-        </footer>
-        <div class="root" id="root">
+   
 
-        </div>
+        <section class="bottom">
+            <div class="partiners">
+                <div class="partner-list">
+                    <h3>Partner</h3>
+                    <ul class="ul-partners">
+                        <li class="li-partiners">PATHFinder</li>
+                        <li class="li-partiners">Marie Cattering</li>
+                        <li class="li-partiners">CoockPOT</li>
+                        <li class="li-partiners">Asilia</li>
+                        <li class="li-partiners">Mdako</li>
+                    </ul>
+                   
+                </div>
+            </div>
+            <div class="korofi">
+                <div class="footer-logo">
+                    <img src="../images/logo-hall.webp" alt="hall logo">
+                </div>
+                <div class="footer-info">
+                    Welcome to vote for our logo for the year
+                </div>
+            </div>
+            <div class="more">
+                <button class="btn-more" id="btn-less">
+                    Less <img src="../images/up-arrow.svg" alt="down arrow" class="color-o" width="30px">
+                </button>
+            </div>
+        </section>
     <script src="../js/app.js"></script>
 </body>
 </html>
