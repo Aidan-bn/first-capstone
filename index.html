@@ -17,25 +17,24 @@
             <ul class="social-ul ">
                 <li class="social-li">fb</li>
                 <li class="social-li">twitter</li>
-                <li class="social-li">English</li>
-                <li class="social-li">My Page</li>
                 <li class="social-li">Logout</li>
             </ul>
         </div>
-        <nav class="">
+        <nav>
             <div class="logo">
                 Welcome
             </div>
             <ul class="menu-ul">
-                <li class="menu-li active">About</li>
-                <li class="menu-li">Program</li>
+                <li class="menu-li active"><a href="./pages/about.html">About</a></li>
+                <li class="menu-li"><a href="index.html">Program</a></a></li>
                 <li class="menu-li">Join</li>
                 <li class="menu-li">Sponsor</li>
                 <li class="menu-li">News</li>
                 <li class="menu-li">CC Compaign</li>
+                <li class="close">&times;</li>
             </ul>
             <div class="hamburger container">
-                <span class="material-symbols-outlined">menu</span>
+                <span class="material-symbols-outlined hamburger-menu">menu</span>
             </div>
         </nav>
         <div class="greeting container">
@@ -121,132 +120,49 @@
         <div class="heading container">
             <h3 class="color-b">Featured Speaker</h3>
         </div>
-        <div class="desktop" >
-            <div class="desktop-left">
-                <div class=" container">
-                    <div class="speakers container">
-                        <div class="pic-speakers">
-                            <img src="./images/second-image.jpeg" alt="first hall" width="130px" height="110px">
-                        </div>
-                        <div class="speakers-text">
-                            <ul class="ul-speaker">
-                                <li class="li-speaker color-b">Aidan Aidan</li>
-                                <li class="li-speaker color-o">Hello guys how are you today</li>
-                                <li class="li-speaker color-o"> _____</li>
-                                <li class="li-speaker color-b"> Hello guys how are you today Hello welcome</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="speakers container">
-                        <div class="pic-speakers">
-                            <img src="./images/sixth-hall.jpeg" alt="first hall" width="130px" height="110px">
-                        </div>
-                        <div class="speakers-text">
-                            <ul class="ul-speaker">
-                                <li class="li-speaker color-b">Aidan Aidan</li>
-                                <li class="li-speaker color-o">Hello guys how are you today Hello guys how are you today</li>
-                                <li class="li-speaker color-o"> _____</li>
-                                <li class="li-speaker color-b">Am feeling lucky to be here</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="speakers container">
-                        <div class="pic-speakers">
-                            <img src="./images/fourt-hall.jpeg" alt="first hall" width="130px" height="110px">
-                        </div>
-                        <div class="speakers-text">
-                            <ul class="ul-speaker">
-                                <li class="li-speaker color-b">Aidan Aidan</li>
-                                <li class="li-speaker color-o">How are you today Hello guys how are you today</li>
-                                <li class="li-speaker color-o"> _____</li>
-                                <li class="li-speaker color-b">Am feeling lucky to be here</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
+        <!--mobile flex-->
+           <div class="speakers" id="speakers">
 
-            <div class="desktop-right">
-                <div class="container">
-                    <div class="speakers container">
-                        <div class="pic-speakers">
-                            <img src="./images/fifth-hall.jpeg" alt="first hall" width="130px" height="110px">
-                        </div>
-                        <div class="speakers-text">
-                            <ul class="ul-speaker">
-                                <li class="li-speaker color-b">Aidan Aidan</li>
-                                <li class="li-speaker color-o">Hello guys how are you today Hello guys how</li>
-                                <li class="li-speaker color-o"> _____</li>
-                                <li class="li-speaker color-b">Am feeling lucky to be here</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class=" container">
-                    <div class="speakers container">
-                        <div class="pic-speakers">
-                            <img src="./images/fifth.jpeg" alt="first hall" width="130px" height="110px">
-                        </div>
-                        <div class="speakers-text">
-                            <ul class="ul-speaker">
-                                <li class="li-speaker color-b">Aidan Aidan</li>
-                                <li class="li-speaker color-o">Hello guys how Hello guys how are you today</li>
-                                <li class="li-speaker color-o"> _____</li>
-                                <li class="li-speaker color-b">Am feeling lucky to be here</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class=" container">
-                    <div class="speakers container">
-                        <div class="pic-speakers">
-                            <img src="./images/fourt-hall.jpeg" alt="first hall" width="130px" height="110px">
-                        </div>
-                        <div class="speakers-text">
-                            <ul class="ul-speaker">
-                                <li class="li-speaker color-b">Aidan Aidan</li>
-                                <li class="li-speaker color-o">Hello guys how Hello guys how are you today</li>
-                                <li class="li-speaker color-o"> _____</li>
-                                <li class="li-speaker color-b">Am feeling lucky to be here</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+           </div>
+
             <div class="more">
-                <button class="btn-more">
+                <button class="btn-more" id="btn-more">
                     More <img src="./images/more.svg" alt="down arrow" class="color-o" width="30px">
                 </button>
             </div>
         </div>
+        
     </section>
     <!--end feature section-->
      <!--start partner section-->
-     <section class="partiners hide">
-        <div class="partner-list">
-            <h3>Partner</h3>
-            <ul class="ul-partners">
-                <li class="li-partiners">Mozilla</li>
-                <li class="li-partiners">Google</li>
-                <li class="li-partiners">NAVER</li>
-                <li class="li-partiners">daumkakao</li>
-                <li class="li-partiners">airbnb</li>
-            </ul-partners>
+    <section class="bottom">
+        <div class="partiners">
+            <div class="partner-list">
+                <h3>Partner</h3>
+                <ul class="ul-partners">
+                    <li class="li-partiners">Mozilla</li>
+                    <li class="li-partiners">Google</li>
+                    <li class="li-partiners">NAVER</li>
+                    <li class="li-partiners">daumkakao</li>
+                    <li class="li-partiners">airbnb</li>
+                </ul-partners>
+            </div>
         </div>
-    </section>
-    <!--end partner section-->
-        <footer class="hide">
+        <div class="korofi">
             <div class="footer-logo">
-                <img src="../images/main-1.png">
+                <img src="./images/logo-hall.webp" alt="hall logo">
             </div>
             <div class="footer-info">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, aspernatur.
+                Lorem ipsum, dolor sit amet consectetur Lorem ipsum dolor sit.
             </div>
-        </footer>
+        </div>
+        <div class="more">
+            <button class="btn-more" id="btn-less">
+                Less <img src="./images/more.svg" alt="down arrow" class="color-o" width="30px">
+            </button>
+        </div>
+    </section>
+
+    <script src="./js/app.js"></script>
 </body>
 </html>
