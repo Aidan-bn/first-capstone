@@ -58,6 +58,11 @@ a:visited {
   margin: auto;
 }
 
+.nav-div {
+  width: 100vw;
+  background-color: #fefffe;
+}
+
 .hamburger {
   margin: 20px;
   font-size: 30px;
@@ -85,8 +90,9 @@ header {
   display: none;
 }
 
-.greeting h3 {
+.greeting h1 {
   font-weight: 400;
+  font-size: 20px;
   padding: 3px 0;
 }
 
@@ -210,7 +216,7 @@ nav {
 
   nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: #fff;
     gap: 20px;
@@ -359,7 +365,7 @@ nav {
   }
 
   .main-contents li:last-child {
-    font-size: 11px;
+    font-size: 16px;
   }
 
   .join {
@@ -511,6 +517,7 @@ header .about-center {
   font-weight: 400;
   line-height: 1.5rem;
   color: #716f71;
+  border: 10px solid #fefffe;
 }
 
 .contact-about {
