@@ -1,50 +1,21 @@
-// function hamburger() {
-// //   const hamburgerMenu = document.getElementsByClassName('nav-icon');
-// //   const hamburgerMenuExit = document.getElementsByClassName('close');
-// //   const hamburgerMenuItems = document.getElementsByClassName('hamburger-list');
+const ul = document.querySelector('.menu-ul');
+const hamburger = document.querySelector('.hamburger');
+const div = document.createElement('div');
+const close = document.querySelector('.close');
 
-//   hamburgerMenu[0].addEventListener('click', () => {
-//     document.getElementsByClassName('menu')[0].style.display = 'flex';
-//   });
-
-//   hamburgerMenuExit[0].addEventListener('click', () => {
-//     document.getElementsByClassName('menu')[0].style.display = 'none';
-//   });
-
-//   [...hamburgerMenuItems].forEach((element) => {
-//     element.addEventListener('click', () => {
-//       document.getElementsByClassName('menu')[0].style.display = 'none';
-//     });
-//   });
-// }
-// hamburger();
-
-function menu() {
-  const hamburgerMenu = document.getElementsByClassName('hamburger-menu');
-  const hamburgerClose = document.getElementsByClassName('close');
-  const menuList = document.getElementsByClassName('menu-li');
-  const viewMore = document.getElementsByClassName('btn-more');
-
-  hamburgerMenu[0].addEventListener('click', () => {
-    document.getElementsByClassName('menu-ul')[0].style.display = 'flex';
+hamburger.addEventListener('click', () => {
+  div.classList.add('overlay');
+  // hamburger.style.display = 'block';
+  close.style.display = 'block';
+  div.appendChild(ul);
+  document.body.appendChild(div);
+  close.addEventListener('click', () => {
+    div.style.display = 'none';
   });
-
-  hamburgerClose[0].addEventListener('click', () => {
-    document.getElementsByClassName('menu-ul')[0].style.display = 'none';
-  });
-
-  [...menuList].forEach((element) => {
-    element.addEventListener('click', () => {
-      document.getElementsByClassName('menu-ul')[0].style.display = 'none';
-    });
-
-    viewMore[0].addEventListener('click', () => {
-      document.getElementsByClassName('bottom')[0].style.display = 'flex';
-    });
-  });
-}
-
-menu();
+  ul.forEach((n) => n.addEventListener('click', () => {
+    div.style.display = 'none';
+  }));
+});
 
 const halls = [
   {
@@ -68,7 +39,7 @@ const halls = [
   {
     name: 'Magu Hall',
     designation: 'Chato',
-    description: 'A five stars hall with full AC which can accomodate more than 500 participants at once',
+    description: 'A five stars hall with which can accomodate more than 500 participants',
     Image: './images/fifth-hall.jpeg',
   },
   {
@@ -94,9 +65,9 @@ halls.map((hall) => {
     <img src="${hall.Image}" alt="image one">
 </div>
 <div class="feature-content">
-    <ul class="top-feature">
-        <li class="li-feature-item color-b">${hall.name}</li>
-        <li class="li-feature-item color-o">${hall.designation}</li>
+    <ul class="top-left-feature">
+        <li class="li-feature-name color-b">${hall.name}</li>
+        <li class="li-feature-item-desc color-o">${hall.designation}</li>
     </ul>
     <ul class="top-feature">
         <li class="li-feature-item color-b">${hall.description} </li>
@@ -108,24 +79,19 @@ halls.map((hall) => {
 });
 speakersDiv.innerHTML = item;
 
-// const hamburgericon = document.getElementById('hmbgbtn');
-// const closebtn = document.getElementById('closebtn');
-// const navbar = document.querySelector('.navbar');
 const morebtn = document.getElementById('btn-more');
 const lessbtn = document.getElementById('btn-less');
 const partners = document.querySelector('.bottom');
-const footer = document.getElementById('footer');
 
 morebtn.addEventListener('click', () => {
   partners.classList.toggle('show');
   morebtn.style.display = 'none';
-  footer.style.display = 'flex';
-  lessbtn.style.display = 'flex';
+  lessbtn.style.display = 'block';
+  document.getElementsByClassName('bottom')[0].style.display = 'flex';
 });
 
 lessbtn.addEventListener('click', () => {
   partners.classList.toggle('hide');
-  morebtn.style.display = 'none';
-  footer.style.display = 'none';
-  lessbtn.style.display = 'none';
+  morebtn.style.display = 'flex';
+  document.getElementsByClassName('bottom')[0].style.display = 'none';
 });
