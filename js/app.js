@@ -1,51 +1,3 @@
-// function hamburger() {
-// //   const hamburgerMenu = document.getElementsByClassName('nav-icon');
-// //   const hamburgerMenuExit = document.getElementsByClassName('close');
-// //   const hamburgerMenuItems = document.getElementsByClassName('hamburger-list');
-
-//   hamburgerMenu[0].addEventListener('click', () => {
-//     document.getElementsByClassName('menu')[0].style.display = 'flex';
-//   });
-
-//   hamburgerMenuExit[0].addEventListener('click', () => {
-//     document.getElementsByClassName('menu')[0].style.display = 'none';
-//   });
-
-//   [...hamburgerMenuItems].forEach((element) => {
-//     element.addEventListener('click', () => {
-//       document.getElementsByClassName('menu')[0].style.display = 'none';
-//     });
-//   });
-// }
-// hamburger();
-
-// function menu() {
-//   const hamburgerMenu = document.getElementsByClassName('hamburger-menu');
-//   const hamburgerClose = document.getElementsByClassName('close');
-//   const menuList = document.getElementsByClassName('menu-li');
-//   // const viewMore = document.getElementsByClassName('btn-more');
-
-//   hamburgerMenu[0].addEventListener('click', () => {
-//     document.getElementsByClassName('menu-ul')[0].style.display = 'flex';
-//   });
-
-//   hamburgerClose[0].addEventListener('click', () => {
-//     document.getElementsByClassName('menu-ul')[0].style.display = 'none';
-//   });
-
-//   [...menuList].forEach((element) => {
-//     element.addEventListener('click', () => {
-//       document.getElementsByClassName('menu-ul')[0].style.display = 'none';
-//     });
-
-//     // viewMore[0].addEventListener('click', () => {
-//     //   document.getElementsByClassName('bottom')[0].style.display = 'flex';
-//     // });
-//   });
-// }
-
-// menu();
-
 const ul = document.querySelector('.menu-ul');
 const hamburger = document.querySelector('.hamburger');
 const div = document.createElement('div');
@@ -61,11 +13,9 @@ hamburger.addEventListener('click', () => {
     div.style.display = 'none';
   });
   ul.forEach((n) => n.addEventListener('click', () => {
-    div.style.display = 'none'}));
-
-
-})
-
+    div.style.display = 'none';
+  }));
+});
 
 const halls = [
   {
@@ -129,9 +79,6 @@ halls.map((hall) => {
 });
 speakersDiv.innerHTML = item;
 
-// const hamburgericon = document.getElementById('hmbgbtn');
-// const closebtn = document.getElementById('closebtn');
-// const navbar = document.querySelector('.navbar');
 const morebtn = document.getElementById('btn-more');
 const lessbtn = document.getElementById('btn-less');
 const partners = document.querySelector('.bottom');

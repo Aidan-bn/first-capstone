@@ -1,6 +1,6 @@
 # First Capstone project
 
-> This is a simple web develoment project created using simple HTML(Hyper text mark-up Language.), CSS(Cascading Style Sheet) and javascript.
+> This is a web develoment project created using HTML(Hyper text mark-up Language.), CSS(Cascading Style Sheet) and javascript.
 
 ## Built With
 
@@ -35,7 +35,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 - Microverse
 - My coding partners and code reviwers
-- Figma
+- Cindy Ship from Creative Commons
 
 ## 📝 License
 
