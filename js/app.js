@@ -5,7 +5,6 @@ const close = document.querySelector('.close');
 
 hamburger.addEventListener('click', () => {
   div.classList.add('overlay');
-  // hamburger.style.display = 'block';
   close.style.display = 'block';
   div.appendChild(ul);
   document.body.appendChild(div);
