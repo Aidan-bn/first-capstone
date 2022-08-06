@@ -86,6 +86,7 @@ const partners = document.querySelector('.bottom');
 morebtn.addEventListener('click', () => {
   partners.classList.toggle('show');
   morebtn.style.display = 'none';
+  lessbtn.style.display = 'block';
   document.getElementsByClassName('bottom')[0].style.display = 'flex';
 });
 

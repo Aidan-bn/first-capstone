@@ -496,6 +496,9 @@ nav {
   padding: 8px 0;
 }
 
+#btn-less {
+  display: none;
+}
 header .about-center {
   text-align: center;
 }
@@ -666,6 +669,7 @@ header .about-center {
   margin: 20px auto;
   padding: 10px;
   flex-direction: column;
+  display: none;
 }
 
 #middle {
@@ -677,10 +681,28 @@ header .about-center {
   grid-row-gap: 8px;
 }
 
+.bottom-footer{
+  display: flex;
+}
+
 @media (min-width: 768px) {
   #middle {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, minmax(200px, auto));
   }
+
+  .bottom {
+    display: flex;
+  }
+
+  .bottom-footer{
+    background-color: #272a31;
+    color: #fff;
+  }
+
+.footer-info-about{
+  color: #fff;
+}
+ 
 }
