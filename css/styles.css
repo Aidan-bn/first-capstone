@@ -401,7 +401,6 @@ nav {
 }
 
 @media (min-width: 768px) {
-  
   .speakers {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -499,6 +498,7 @@ nav {
 #btn-less {
   display: none;
 }
+
 header .about-center {
   text-align: center;
 }
@@ -649,7 +649,6 @@ header .about-center {
 }
 
 @media (min-width: 768px) {
-
   .footer-logo img {
     max-width: 300px;
   }
@@ -681,7 +680,7 @@ header .about-center {
   grid-row-gap: 8px;
 }
 
-.bottom-footer{
+.bottom-footer {
   display: flex;
 }
 
@@ -696,13 +695,12 @@ header .about-center {
     display: flex;
   }
 
-  .bottom-footer{
+  .bottom-footer {
     background-color: #272a31;
     color: #fff;
   }
 
-.footer-info-about{
-  color: #fff;
-}
- 
+  .footer-info-about {
+    color: #fff;
+  }
 }
