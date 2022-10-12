@@ -11,7 +11,6 @@
 ## Live Demo (if available)
 
 [Live Demo Link](https://aidan-bn.github.io/first-capstone/)
-[Lick to the video](https://www.loom.com/share/cebe0395e8d4405d80e6fe239720b640)
 
 ## Getting Started
 
